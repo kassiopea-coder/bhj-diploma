@@ -41,12 +41,12 @@ class User {
          method: "GET",
          responseType: "json",
          callback: (err, response) => {
-         if (response && response.user) {
-         User.setCurrent(response.user);
-         } else {
-          User.unsetCurrent();
-         }
-         callback(err,response); 
+            if (response && response.user) {
+               User.setCurrent(response.user);
+            } else {
+               User.unsetCurrent();
+            }
+            callback(err, response);
          }
       })
    }
@@ -79,18 +79,18 @@ class User {
     * User.setCurrent.
     * */
    static register(data, callback) {
-      return createRequest ({
-      data: data,
-      url: this.URL + "/register",
-      method: "POST",
-      responseType: "json",
-      callback: (err, response) => {
-        if(response && response.user) {
-          User.setCurrent(response.user);
-        }
-        callback(err, response)
-      }
-    })
+      return createRequest({
+         data: data,
+         url: this.URL + "/register",
+         method: "POST",
+         responseType: "json",
+         callback: (err, response) => {
+            if (response && response.user) {
+               User.setCurrent(response.user);
+            }
+            callback(err, response)
+         }
+      })
    }
 
    /**
@@ -98,17 +98,17 @@ class User {
     * выхода необходимо вызвать метод User.unsetCurrent
     * */
    static logout(data, callback) {
-   return createRequest({
-      data: data,
-      url: this.URL + "/logout",
-      method: "POST",
-      responseType: "json",
-      callback: (err, response) => {
-        if(response && response.user) {
-          User.unsetCurrent();
-        }
-        callback(err, response)  
-      }
-    })
+      return createRequest({
+         data: data,
+         url: this.URL + "/logout",
+         method: "POST",
+         responseType: "json",
+         callback: (err, response) => {
+            if (response && response.user) {
+               User.unsetCurrent();
+            }
+            callback(err, response)
+         }
+      })
    }
 }

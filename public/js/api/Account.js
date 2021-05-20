@@ -16,8 +16,6 @@ class Account extends Entity {
          url: `${this.URL}/${id}`,
          responseType: "json",
          callback: callback
-
-
       })
 
    }
