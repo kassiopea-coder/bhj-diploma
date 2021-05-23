@@ -14,7 +14,7 @@ class AsyncForm {
     * */
    constructor(element) {
       if (!element) {
-         throw new Error('Такого элемента нет')
+         throw new Error('Такого элемента нет');
       }
       this.element = element;
       this.registerEvents();
@@ -39,7 +39,7 @@ class AsyncForm {
     * }
     * */
    getData() {
-      const formData = new FormData(element);
+      const formData = new FormData(this.element);
       const data = {};
       for (let [name, value] of formData) {
          data[name] = value;

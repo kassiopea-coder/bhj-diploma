@@ -5,6 +5,30 @@
       "email": "demo@demo",
       "password": "demo",
       "id": "1"
+    },
+    {
+      "name": "Василий",
+      "email": "test@test",
+      "password": "test",
+      "id": "2r54ay5egkp03md4f"
+    },
+    {
+      "name": "Иван",
+      "email": "test1@test.ru",
+      "password": "test",
+      "id": "2r54ay6t4kp03rfag"
+    },
+    {
+      "name": "Василий",
+      "email": "test2@test.ru",
+      "password": "еуые",
+      "id": "2r54ay7hskp04096x"
+    },
+    {
+      "name": "Василий",
+      "email": "test3@mail.ru",
+      "password": "еуые",
+      "id": "2r54ay2w0kp04biw9"
     }
   ],
   "accounts": [

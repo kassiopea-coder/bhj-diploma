@@ -38,7 +38,7 @@ class Modal {
     * */
    onClose(e) {
       e.preventDefault();
-      this.onClose();
+      this.close();
    }
    /**
     * Открывает окно: устанавливает CSS-свойство display

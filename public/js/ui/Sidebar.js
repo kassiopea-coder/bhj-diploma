@@ -19,8 +19,8 @@ class Sidebar {
     * */
    static initToggleButton() {
       document.querySelector('a.sidebar-toggle').addEventListener('click', () => {
-         document.querySelector('body').classList.toggle('sidebar-open');
-         document.querySelector('body').classList.toggle('sidebar-collapse');
+      document.querySelector('body').classList.toggle('sidebar-open');
+      document.querySelector('body').classList.toggle('sidebar-collapse');
       })
    }
 
