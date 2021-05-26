@@ -91,8 +91,8 @@ class AccountsWidget {
     * Вызывает App.showPage( 'transactions', { account_id: id_счёта });
     * */
    onSelectAccount(element) {
-      if (this.createAccountId) {
-         const account = this.element.querySelector(`.account[data-id="${this.createAccountId}"]`);
+      if (this.currentAccountId) {
+         const account = this.element.querySelector(`.account[data-id="${this.currentAccountId}"]`);
          if (account) {
             account.classList.remove('active');
          } else {
@@ -139,7 +139,7 @@ class AccountsWidget {
             name,
             id
          } = item,
-         sum = item.sum.toLocalString('en'),
+         sum = item.sum.toLocaleString('en'),
             html = this.getAccountHTML({
                name,
                id,

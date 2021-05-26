@@ -26,11 +26,9 @@ class User {
     * из локального хранилища
     * */
    static current() {
-      if (localStorage.getItem('user') !== null) {
-         return JSON.parse(localStorage.getItem('user'));
-     }
-
+      return JSON.parse(localStorage.getItem('user'));
    }
+
 
    /**
     * Получает информацию о текущем
@@ -38,7 +36,7 @@ class User {
     * */
    static fetch(callback) {
       return createRequest({
-         
+
          url: this.URL + "/current",
          method: "GET",
          callback: (err, response) => {

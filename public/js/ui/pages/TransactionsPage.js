@@ -181,11 +181,11 @@ class TransactionsPage {
     * используя getTransactionHTML
     * */
    renderTransactions(data) {
-      const content = this.element.querySelector('.content');
-
-      content.innerHTML = '';
-      data.forEach((item) => {
-         content.innerHTML += this.getTransactionHTML(item);
+            
+      let html = ` `;
+      data.forEach(item => {
+         html += this.getTransactionHTML(item);
       });
+      document.querySelector('.content').innerHTML = html;
    }
 }

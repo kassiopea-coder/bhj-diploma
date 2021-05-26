@@ -10,7 +10,7 @@ const createRequest = (options = {}) => {
    //xhr.responseType = options.responseType;
    xhr.withCredentials = true;
 
-  
+
 
    xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
@@ -33,17 +33,17 @@ const createRequest = (options = {}) => {
    } else {
       for (let key in options.data) {
          formData.append(key, options.data[key]);
-         
+
       }
+   }
+
+   try {
+      xhr.open(options.method, options.url);
+      xhr.send(formData);
+
+   } catch (err) {
+      options.callback(err);
+   }
 
 
-      try {
-         xhr.open(options.method, options.url);
-         xhr.send(formData);
-
-      } catch (err) {
-         options.callback(err);
-      }
-     
-}
 }
