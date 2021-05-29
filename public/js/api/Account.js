@@ -5,17 +5,17 @@
  * */
 class Account extends Entity {
 
-   static URL = '/account';
-   /**
-    * Получает информацию о счёте
-    * */
-   static get(id = '', callback) {
-      return createRequest({
-         data: {id},
-         method: "GET",
-         url: `${this.URL}/${id}`,
-         callback
-      })
+    static URL = '/account';
 
-   }
+    /**
+     * Получает информацию о счёте
+     * */
+    static get(id = '', callback) {
+        createRequest({
+            url: this.URL + '/' + id,
+            method: 'GET',
+            data: {id},
+            callback
+        });
+    }
 }

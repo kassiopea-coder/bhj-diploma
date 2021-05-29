@@ -7,40 +7,34 @@
       "id": "1"
     },
     {
-      "name": "Василий",
-      "email": "test@test",
-      "password": "test",
-      "id": "2r54ay5egkp03md4f"
-    },
-    {
       "name": "Иван",
-      "email": "test1@test.ru",
-      "password": "test",
-      "id": "2r54ay6t4kp03rfag"
+      "email": "test@test",
+      "password": "1",
+      "id": "2r54ay4u4kp9ji1pb"
     },
     {
       "name": "Василий",
-      "email": "test2@test.ru",
-      "password": "еуые",
-      "id": "2r54ay7hskp04096x"
+      "email": "mail@mail",
+      "password": "1",
+      "id": "2r54ay6a8kp9pi2kb"
     },
     {
-      "name": "Василий",
-      "email": "test3@mail.ru",
-      "password": "еуые",
-      "id": "2r54ay2w0kp04biw9"
+      "name": "Василий1",
+      "email": "test@test111",
+      "password": "1",
+      "id": "2r54ay7ngkp9sm4z7"
     },
     {
-      "name": "Василий",
-      "email": "test@test.ru",
+      "name": "Федор",
+      "email": "test123@test",
+      "password": "123",
+      "id": "2r54ay5mwkp9vad9c"
+    },
+    {
+      "name": "Анна",
+      "email": "test1234@test",
       "password": "1234",
-      "id": "2r54ay42okp5pb5vf"
-    },
-    {
-      "name": "Василий",
-      "email": "test3@test.ru",
-      "password": "1234",
-      "id": "2r54ay6x4kp5pfvym"
+      "id": "2r54ay72kkp9vkhjh"
     }
   ],
   "accounts": [
@@ -61,13 +55,43 @@
     },
     {
       "name": "Наличные",
-      "user_id": "2r54ay6x4kp5pfvym",
-      "id": "2r54ay7jokp5ph2hp"
+      "user_id": "2r54ay4u4kp9ji1pb",
+      "id": "2r54ay78skp9jyqqp"
     },
     {
       "name": "Сбербанк",
-      "user_id": "2r54ay6x4kp5pfvym",
-      "id": "2r54ay5hskp5qb79y"
+      "user_id": "2r54ay6a8kp9pi2kb",
+      "id": "2r54ay3nkkp9qej3w"
+    },
+    {
+      "name": "Наличные_",
+      "user_id": "2r54ay6a8kp9pi2kb",
+      "id": "2r54ay5t4kp9qf32k"
+    },
+    {
+      "name": "Наличные1",
+      "user_id": "2r54ay7ngkp9sm4z7",
+      "id": "2r54ay4nskp9smh7u"
+    },
+    {
+      "name": "Сбербанк1",
+      "user_id": "2r54ay7ngkp9sm4z7",
+      "id": "2r54ay6mskp9smz5n"
+    },
+    {
+      "name": "Наличные11",
+      "user_id": "2r54ay5mwkp9vad9c",
+      "id": "2r54ay590kp9vhfu0"
+    },
+    {
+      "name": "Наличные2",
+      "user_id": "2r54ay72kkp9vkhjh",
+      "id": "2r54ay4skkp9vktm4"
+    },
+    {
+      "name": "Сбер1",
+      "user_id": "2r54ay72kkp9vkhjh",
+      "id": "2r54ay76skp9vsj41"
     }
   ],
   "transactions": [
@@ -207,67 +231,121 @@
       "user_id": "1"
     },
     {
-      "id": "2r54ay4n8kp5qcin1",
+      "id": "2r54ay7h0kp9kia6g",
+      "type": "income",
+      "name": "Зарплата",
+      "sum": 10000,
+      "account_id": "2r54ay78skp9jyqqp",
+      "user_id": "2r54ay4u4kp9ji1pb",
+      "created_at": "2021-05-29T09:44:41.223Z"
+    },
+    {
+      "id": "2r54ay6jgkp9lmuxd",
       "type": "income",
       "name": "Зарплата",
       "sum": 5000,
-      "account_id": "2r54ay7jokp5ph2hp",
-      "user_id": "2r54ay6x4kp5pfvym",
-      "created_at": "2021-05-26T17:17:05.244Z"
+      "account_id": "2r54ay78skp9jyqqp",
+      "user_id": "2r54ay4u4kp9ji1pb",
+      "created_at": "2021-05-29T10:16:14.352Z"
     },
     {
-      "id": "2r54ay704kp5qtnhd",
-      "type": "income",
-      "name": "Зарплата",
-      "sum": 5000,
-      "account_id": "2r54ay7jokp5ph2hp",
-      "user_id": "2r54ay6x4kp5pfvym",
-      "created_at": "2021-05-26T17:30:24.672Z"
-    },
-    {
-      "id": "2r54ay4wskp5qun87",
+      "id": "2r54ay3sskp9ny3xu",
       "type": "expense",
-      "name": "Шаурма",
-      "sum": 150,
-      "account_id": "2r54ay7jokp5ph2hp",
-      "user_id": "2r54ay6x4kp5pfvym",
-      "created_at": "2021-05-26T17:31:10.998Z"
+      "name": "Отпуск",
+      "sum": 10000,
+      "account_id": "2r54ay78skp9jyqqp",
+      "user_id": "2r54ay4u4kp9ji1pb",
+      "created_at": "2021-05-29T11:20:58.481Z"
     },
     {
-      "id": "2r54ay7fkkp5qwf4p",
+      "id": "2r54ay43wkp9qesnn",
+      "type": "income",
+      "name": "Зарплата",
+      "sum": 10000,
+      "account_id": "2r54ay3nkkp9qej3w",
+      "user_id": "2r54ay6a8kp9pi2kb",
+      "created_at": "2021-05-29T12:29:56.242Z"
+    },
+    {
+      "id": "2r54ay2q8kp9qfeym",
       "type": "income",
       "name": "Аванс",
       "sum": 5000,
-      "account_id": "2r54ay7jokp5ph2hp",
-      "user_id": "2r54ay6x4kp5pfvym",
-      "created_at": "2021-05-26T17:32:33.816Z"
+      "account_id": "2r54ay5t4kp9qf32k",
+      "user_id": "2r54ay6a8kp9pi2kb",
+      "created_at": "2021-05-29T12:30:25.149Z"
     },
     {
-      "id": "2r54ay5cokp5qwq08",
+      "id": "2r54ay5wskp9qftrp",
       "type": "expense",
-      "name": "Шаурма",
-      "sum": 150,
-      "account_id": "2r54ay7jokp5ph2hp",
-      "user_id": "2r54ay6x4kp5pfvym",
-      "created_at": "2021-05-26T17:32:47.911Z"
+      "name": "Продукты",
+      "sum": 1000,
+      "account_id": "2r54ay5t4kp9qf32k",
+      "user_id": "2r54ay6a8kp9pi2kb",
+      "created_at": "2021-05-29T12:30:44.340Z"
     },
     {
-      "id": "2r54ay75okp5qxhum",
+      "id": "2r54ay6mckp9smqn5",
       "type": "income",
-      "name": "Отпускные",
+      "name": "Зарплата",
       "sum": 10000,
-      "account_id": "2r54ay5hskp5qb79y",
-      "user_id": "2r54ay6x4kp5pfvym",
-      "created_at": "2021-05-26T17:33:23.997Z"
+      "account_id": "2r54ay4nskp9smh7u",
+      "user_id": "2r54ay7ngkp9sm4z7",
+      "created_at": "2021-05-29T13:32:06.112Z"
     },
     {
-      "id": "2r54ay78skp5sj1rt",
+      "id": "2r54ay6z0kp9snpa7",
+      "type": "expense",
+      "name": "продукты",
+      "sum": 1000,
+      "account_id": "2r54ay4nskp9smh7u",
+      "user_id": "2r54ay7ngkp9sm4z7",
+      "created_at": "2021-05-29T13:32:51.006Z"
+    },
+    {
+      "id": "2r54ay4m0kp9ukfgb",
+      "type": "income",
+      "name": "Стипендия",
+      "sum": 5000,
+      "account_id": "2r54ay6mskp9smz5n",
+      "user_id": "2r54ay7ngkp9sm4z7",
+      "created_at": "2021-05-29T14:26:17.530Z"
+    },
+    {
+      "id": "2r54ay6pgkp9ulupe",
+      "type": "income",
+      "name": "Стипендия",
+      "sum": 10000,
+      "account_id": "2r54ay6mskp9smz5n",
+      "user_id": "2r54ay7ngkp9sm4z7",
+      "created_at": "2021-05-29T14:27:23.953Z"
+    },
+    {
+      "id": "2r54ay4r4kp9umbyq",
       "type": "expense",
       "name": "Цветы",
       "sum": 1000,
-      "account_id": "2r54ay5hskp5qb79y",
-      "user_id": "2r54ay6x4kp5pfvym",
-      "created_at": "2021-05-26T18:18:09.208Z"
+      "account_id": "2r54ay4nskp9smh7u",
+      "user_id": "2r54ay7ngkp9sm4z7",
+      "created_at": "2021-05-29T14:27:46.321Z"
+    },
+    {
+      "id": "2r54ay6u4kp9vlatg",
+      "type": "income",
+      "name": "Зп",
+      "sum": 10000,
+      "account_id": "2r54ay4skkp9vktm4",
+      "user_id": "2r54ay72kkp9vkhjh",
+      "created_at": "2021-05-29T14:54:57.795Z"
+    },
+    {
+      "id": "2r54ay7lckp9vsuhb",
+      "type": "income",
+      "name": "Подарок",
+      "sum": 20000,
+      "account_id": "2r54ay76skp9vsj41",
+      "user_id": "2r54ay72kkp9vkhjh",
+      "created_at": "2021-05-29T15:00:49.870Z"
     }
   ]
 }

@@ -3,36 +3,35 @@
  * открытие всплывающих окон для
  * создания нового дохода или расхода
  * */
-
 class TransactionsWidget {
-   /**
-    * Устанавливает полученный элемент
-    * в свойство element.
-    * Если переданный элемент не существует,
-    * необходимо выкинуть ошибку.
-    * */
-   constructor(element) {
-      if (!element) {
-         throw new Error('Такого элемента нет');
-      }
-      this.element = element;
-      this.registerEvents();
-   }
-   /**
-    * Регистрирует обработчики нажатия на
-    * кнопки «Новый доход» и «Новый расход».
-    * При нажатии вызывает Modal.open() для
-    * экземпляра окна
-    * */
-   registerEvents() {
-      const createIncomeButton = this.element.querySelector('.create-income-button'),
-         createExpenseButton = this.element.querySelector('.create-expense-button'),
+  /**
+   * Устанавливает полученный элемент
+   * в свойство element.
+   * Если переданный элемент не существует,
+   * необходимо выкинуть ошибку.
+   * */
+  constructor( element ) {
+    if ( !element ) {
+      throw new Error( 'Такого элемента нет' );
+    }
+    this.element = element;
 
-         incomeModal = App.getModal('newIncome'),
-         expenseModal = App.getModal('newExpense');
+    this.registerEvents();
+  }
+  /**
+   * Регистрирует обработчики нажатия на
+   * кнопки «Новый доход» и «Новый расход».
+   * При нажатии вызывает Modal.open() для
+   * экземпляра окна
+   * */
+  registerEvents() {
+    const createIncomeButton = this.element.querySelector( '.create-income-button' ),
+        createExpenseButton = this.element.querySelector( '.create-expense-button' ),
 
-      createIncomeButton.addEventListener('click', () => incomeModal.open());
-      createExpenseButton.addEventListener('click', () => expenseModal.open());
+        incomeModal = App.getModal('newIncome'),
+        expenseModal = App.getModal('newExpense');
 
-   }
+    createIncomeButton.addEventListener( 'click', () => incomeModal.open());
+    createExpenseButton.addEventListener( 'click', () => expenseModal.open());
+  }
 }
